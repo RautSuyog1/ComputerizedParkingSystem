@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Landing Page</title>
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<div id="login-form-wrap">
+		<h1 align="center">Welcome To IMCC Parking</h1>
+		<h2>User Login</h2>
+		<form action="LoginServlet" action="MyHistoryServlet" method="get" id="login-form">
+			<p>
+				<input type="text"  name="rollNo"  maxlength=7 placeholder="Roll No."
+					required><span></span>
+			</p>
+			<p>
+				<input type="password"  name="pass" placeholder="Password"
+					required><span></span>
+			</p>
+			<p>
+				<input type="submit" id="login" value="Login">
+			</p>
+			<p>
+				<input type="reset" id="reset" value="Clear">
+			</p>
+		</form>
+		<div id="create-account-wrap">
+			<p>
+				Not a member? <a href="UserRegistration.html">Create Account</a><br>
+				<a href="AdminLogin.html"> Admin Login</a> OR <a href="ManagerLogin.html"> Manager Login</a>
+			<p>
+		</div>
+	</div>
+
+
+</body>
+</html>
